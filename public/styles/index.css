@@ -1,0 +1,80 @@
+main {
+    width: 90%;
+    max-width: 50rem;
+    margin: 3rem auto;
+    text-align: center;
+  }
+  
+  main h1 {  
+    font-family: 'Roboto Condensed', 'Roboto', sans-serif;
+    color:rgb(202, 158, 62);
+  }
+  
+  main ul {
+    list-style: none;
+    margin: 3rem 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  main li {
+    width: 20rem;
+    height: 10rem;
+    border-radius: 6px;
+    margin: 0 1rem;
+    overflow: hidden;
+  }
+  
+  main li a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background: linear-gradient(60deg, #494949, #26263f); 
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color:white ;
+    font-size: 1.25rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    transition: 0.5s ease-out;
+  }
+
+ 
+
+
+
+.card-hover:hover{
+
+  background: linear-gradient(60deg, #1e1e1e, #6f6ff4);
+  color: white;
+  border: 1px dashed white;
+
+  }
+
+
+  .img-restaurant {
+       padding: 0.75rem;
+       background-color: rgb(196, 194, 194);
+       box-shadow: 2px 4px 4px solid rgba(0,0,0,0.25);
+  }
+
+  .img-restaurant img {
+    width:100%;
+    height: 20rem;
+    object-fit: cover;
+  }
+
+  .view-website{
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 1px solid rgb(41,41,206);
+    color:rgb(41, 41, 206) ;
+    background-color: white ;
+    transition: 0.1s ease-in-out ;
+  }
+  .view-website:hover{
+    color:  antiquewhite;
+    background-color:rgb(41, 41, 206) ;
+ }

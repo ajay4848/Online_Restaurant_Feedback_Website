@@ -1,0 +1,22 @@
+<%- include('includes/admin-head.ejs', { title: 'Blogs' }) %>
+<link rel="stylesheet" href="/styles/posts.css">
+ 
+</head>
+
+<body>
+  <%- include('includes/admin-header.ejs') %>
+  <main id="all-posts">
+    <h1>All Blogs
+    </h1>
+    <% if(!posts || posts .length===0){%>
+        <p>Not Found - add</p>
+        <a class="btn" href="/new-post">Create a new Blog</a>
+    <%}%>
+   <% for( const post of posts) {%>
+      <%- include('includes/blog-item',{post:post})%> 
+    <%}%>
+  </main> 
+  
+</body>
+
+</html>

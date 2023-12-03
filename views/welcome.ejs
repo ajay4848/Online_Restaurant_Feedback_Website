@@ -1,0 +1,20 @@
+<%- include('includes/admin-head.ejs', { title: 'Welcome' }) %>
+</head>
+<body>
+  <%- include('includes/admin-header.ejs') %>
+  <main>
+    <h1>Welcome </h1>
+  <h2 style="margin-bottom: 3rem;">Connect with us to to share you service !!!</h2>
+   <%if(!locals.isAuth){%>
+     
+     <p ><a class="btn-sl" href="/signup">Signup</a></p>
+     <h2>OR</h2>
+     <p ><a class="btn-sl" href="login">Login</a></p>
+     <%}else{%>
+       <!-- <p class="Blogs-admin">Visit your Blogs <span>---></span>  <a href="/admin-blogs">Blogs Here!!!</a></p>  -->
+        <a class="login-email"> You logged as <%=locals.email%></a> 
+       <%}%>
+  </main>
+
+</body>
+</html>

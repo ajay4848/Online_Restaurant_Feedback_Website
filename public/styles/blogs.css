@@ -1,0 +1,105 @@
+/* All posts page */
+
+#all-posts {
+    text-align: center;
+  }
+
+  main p {
+    color: Black;
+    font-size: 1.2rem;
+  }
+  
+  #posts-list {
+    margin: 3rem auto;
+    max-width: 40rem;
+    padding-left: 0;
+  }
+  
+  li{
+    list-style: none;
+  }
+  .post-item {
+    margin: 1rem auto 0 auto;
+    box-shadow: 6px 2px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding: 2.5rem 1rem;
+    background-color: rgb(255, 157, 125);
+    display: flex;
+    justify-content: space-between;
+    border-inline: 1px solid black;
+    background: linear-gradient(#c3a9a9, #78798e);
+  }
+  
+  .post-item h2,
+  .post-item p {
+    margin: 0.5rem 0;
+    color:black ;
+  }
+  
+  .post-item-author {
+    font-style: italic;
+  }
+  
+  .post-actions {
+    margin: 0;
+    display: table;
+  }
+  
+  .post-actions .btn-alt {
+    padding: 0.5rem 1rem;
+  }
+  
+  /* Post detail page */
+  
+  #post-meta {
+    color: rgb(156, 149, 149);
+  }
+  
+  #post-meta address {
+    display: inline;
+  }
+  
+  #post-meta time {
+    font-style: italic;
+  }
+  
+  #body {
+    white-space: pre-wrap; /* This ensures that line breaks and whitespace are kept */
+  }
+
+  #img{
+    width:8rem;
+    height: 8rem;
+    border-radius: 3px;
+  }
+
+  .view-blog{
+    padding: 0.5rem 1rem;
+    background-color: bisque;
+    border-radius:4px;
+
+  }
+  .view-blog:hover{
+  
+  font-size: 1.15rem;
+  }
+
+  .blog-image{
+    padding: 0.45rem ;
+    width: 80%;
+    margin: 2rem auto;
+    background-color: rgb(196, 194, 194);
+    box-shadow: 2px 4px 4px solid rgba(0,0,0,0.25);
+    border-radius: 8px;
+  }
+  .blog-image img{
+    width: 100%;
+    height: 20rem;
+    object-fit: contain;
+  }
+
+  .post-actions .btn .btn-alt:hover{
+    background-color: rgb(28,0,128);
+    color: white;
+    border: 1.5px solid rgb(28,0,128);
+  }

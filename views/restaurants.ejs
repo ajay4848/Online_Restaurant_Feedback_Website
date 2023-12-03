@@ -1,0 +1,26 @@
+<%-include('includes/head') %>
+<link rel="stylesheet" href="/styles/restaurants.css" />
+<%- include('includes/header') %>
+
+<main>
+  <h1>Recommended restaurants</h1>
+  <p>Find your next favorite restaurants Here Only!!!</p>
+
+<%if(!restaurants || restaurants.length===0){%>
+    <p>No Restaurants Found</p>
+    <p>We will work on it soon!!!</p>
+  <%}else{%>
+    <ol id="restaurants-list">
+        <%for(const resta of restaurants) {%>
+    <li>
+     <%- include('includes/restaurant',{resta:resta}) %>
+    </li>
+       <%}%>
+    </ol>
+
+  <%}%>
+
+</main>
+<%-include('includes/footer') %>
+</body>
+</html>

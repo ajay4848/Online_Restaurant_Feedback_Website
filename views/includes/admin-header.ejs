@@ -1,0 +1,24 @@
+<header id="main-header">
+  <nav>
+    <ul>
+      <li><a href="/owners">Home</a></li>
+      <%if(!locals.isAuth){%>
+        <li><a href="/signup">Signup</a></li>
+        <li><a href="/login">Login</a></li>
+        <%}%>
+      
+      
+       <% if(locals.isAuth){%>
+        <li><a href="/admin-blogs">Blogs</a></li>
+        <li><a href="/recommend">Add Restaurant</a></li> 
+      <li>
+        <form action="/logout" method="POST">
+          <button class="logout">Logout</button>
+        </form>
+      </li>
+      <%}%>
+
+
+    </ul>
+  </nav>
+</header>

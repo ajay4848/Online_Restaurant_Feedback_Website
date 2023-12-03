@@ -1,0 +1,24 @@
+<%-include('includes/head') %>
+    <link rel="stylesheet" href="/styles/index.css" />
+    <%- include('includes/header') %>
+
+
+    <main>
+      <h1 ><%=restaurant.name%></h1>
+      <p style="margin-block: 1rem;">Address:<%=restaurant.address%></p>
+      <p> Cusine:
+        <%=restaurant.cuisine%>
+      </p>
+      <p><%=restaurant.description%></p>
+      <p>
+        <a class="view-website" href="http://www.google.com" target="_blank">View website</a>
+        
+      </p>
+      <p style="text-align: left;"> Image of Restaurant</p>
+      <div class="img-restaurant">
+        <img src="<%=restaurant.imagePath %>" alt="The image of the Restaurant." >
+      </div>
+    </main>
+    <!-- <%-include('includes/footer') %> -->
+  </body>
+</html>

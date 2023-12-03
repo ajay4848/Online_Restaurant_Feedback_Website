@@ -1,0 +1,28 @@
+
+  <%- include('includes/admin-head', { title: 'Update post' }) %>
+  <link rel="stylesheet" href="/styles/blogCreate.css">
+</head>
+
+<body>
+  <%- include('includes/admin-header') %>
+  <main>
+    <h1>Update post</h1>
+    <form action="/update-blog/<%=post._id%>"  method="POST">
+      <div class="form-control">
+        <label for="title">Title</label>
+        <input value="<%=post.title%>"  type="text" id="title" name="title" required>
+      </div>
+      <div class="form-control">
+        <label for="summary">Summary</label>
+        <input value="<%=post.summary%>"  type="text" id="summary" name="summary" required maxlength="255">
+      </div>
+      <div class="form-control">
+        <label for="content">Blog Content</label>
+        <textarea id="content" name="content" required rows="5">value="<%=post.content%>" </textarea>
+      </div>
+      <button class="btn">Update Blog</button>
+    </form>
+  </main>
+</body>
+
+</html>

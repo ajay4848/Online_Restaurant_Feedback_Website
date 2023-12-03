@@ -1,0 +1,13 @@
+<article class="post-item">
+  <div>
+    <h2><%=post.title%></h2>
+    <p class="post-item-author">By <%=post.name%></p>
+    <p><%=post.sumaary%></p>
+  </div>
+  <div style="display: inline;">
+    <img id="img" src="<%=post.blogImage%>" alt="">
+  </div>
+</article>
+<div  class="post-actions">
+  <a class="btn view-blog" href="/blogs/<%=post._id%>">View Blog</a>
+</div>
